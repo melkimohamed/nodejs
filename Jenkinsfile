@@ -1,6 +1,6 @@
-node('testing') {
-
-
+pipeline {
+    agent any 
+    
     stage('Checkout') {
         echo 'Getting source code...'
         checkout scm
