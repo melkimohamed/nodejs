@@ -1,7 +1,7 @@
 pipeline {
-    agent any 
-    
-    stage('Checkout') {
+    agent none 
+    stages {
+        stage('Checkout') {
         echo 'Getting source code...'
         checkout scm
     }
@@ -19,5 +19,6 @@ pipeline {
     stage('Publish') {
         echo 'Testing...'
         sh 'npm start'
+    }
     }
 }
