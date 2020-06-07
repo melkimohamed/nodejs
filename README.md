@@ -1,5 +1,5 @@
-# Démo intégration contenu(CI) avec Jenkins et Github
-#Task 1 : création projet NodeJs/Angular sur Github
+# Intégration contenue (CI) avec Jenkins et Github
+## Task 1 : création projet NodeJs/Angular sur Github
 
 Cloner le projet nodejs/Angular sur votre machine et le pousser sur votre propre compte github
 
@@ -16,7 +16,7 @@ git remote add origin https://github.com/melkimohamed/nodejs.git
 git push origin master
 
 Maintenant vous avez le projet todolist sur votre propre compte github.
-#Task 2- Instalation  Jenkins
+## Task 2- Instalation  Jenkins
 1.	Sous ubuntu
 wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
 sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
@@ -54,7 +54,7 @@ Presentation de tableau de board
 	Npm start
 8.	Cliquer sur build Now, si le build se termine avec succès, allez sur localhost:3000 pour voir votre projet
 
-##Task 5 Création de webhook avec git 
+## Task 5 Création de webhook avec git 
 1.	Creation de webhook
 	- Sur votre projet github: aller sur setting > Webhooks & services > Add Webhook 
 	- Dans le champs: Playload url inserer votre url localhost:8080/github-webhook/
